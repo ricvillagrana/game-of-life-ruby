@@ -3,7 +3,7 @@ require_relative 'lib/seeds/seeds.rb'
 
 conway = Conway.new
 rand_seed = conway.new_seed 50
-world = conway.new_world line # rand_seed.get_seed
+world = conway.new_world rand_seed.get_seed
 
 
 
@@ -11,5 +11,5 @@ loop do
     system "clear" or system "cls"
     world.show
     world.next_generation
-    sleep 0.2
+    sleep 0.1
 end

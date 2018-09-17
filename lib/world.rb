@@ -48,6 +48,7 @@ class World
         total_neighbors = 0
         for x in (position_x - 1)..(position_x + 1)
             for y in (position_y - 1)..(position_y + 1)
+                # Check if is not out of bounds
                 total_neighbors += 1 if !(x < 0 or x >= @size[:x] or y < 0 or y >= @size[:y] or (position_x == x && position_y == y)) and @world[x][y].is_alive?
             end
         end
