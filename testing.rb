@@ -1,9 +1,14 @@
-require_relative 'lib/world'
-require_relative 'lib/seeds/random_seed'
+require_relative 'lib/conway'
 
-rand_seed = RandomSeed.new 20
-world = World.new rand_seed.get_seed
+conway = Conway.new
+rand_seed = conway.new_seed 50
+world = conway.new_world rand_seed.get_seed
 
-world.show
 
-puts world.count_neighbors 5,5
+
+loop do
+    system "clear" or system "cls"
+    world.show
+    world.next_generation
+    sleep 0.2
+end
