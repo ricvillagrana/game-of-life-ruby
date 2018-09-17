@@ -1,7 +1,6 @@
 class Cell 
-    def initialize position, alive
+    def initialize alive
         @alive = alive
-        @position = position # Position must be a hash {:x => 0, :y => 0}
     end
 
     def is_alive?
