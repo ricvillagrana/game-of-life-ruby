@@ -1,5 +1,5 @@
 require_relative 'cell'
-class Universe
+class World
     def initialize seed
         @size = {
             :x => seed.first.size,
@@ -29,4 +29,5 @@ class Universe
             end
         end
     end
+
 end
