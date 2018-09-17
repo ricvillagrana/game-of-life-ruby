@@ -1,5 +1,6 @@
+require_relative 'cell'
 class Universe
-    def initialize
+    def initialize seed
         
     end
 end
