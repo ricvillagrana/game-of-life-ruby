@@ -1,8 +1,9 @@
 require_relative 'lib/conway'
+require_relative 'lib/seeds/seeds.rb'
 
 conway = Conway.new
 rand_seed = conway.new_seed 50
-world = conway.new_world rand_seed.get_seed
+world = conway.new_world line # rand_seed.get_seed
 
 
 
