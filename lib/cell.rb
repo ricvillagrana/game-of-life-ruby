@@ -1,18 +1,18 @@
-class Cell 
-    def initialize alive
-        @alive = alive
-    end
+# Cell class
+class Cell
+  def initialize(alive = false)
+    @alive = alive
+  end
 
-    def is_alive?
-        @alive
-    end
+  def alive?
+    @alive
+  end
 
-    def revive
-        @alive  = true
-    end
+  def revive
+    @alive = true
+  end
 
-    def kill
-        @alive = false
-    end
-
+  def kill
+    @alive = false
+  end
 end
